@@ -1,0 +1,97 @@
+/* กำหนดสไตล์สำหรับ body */
+body {
+    font-family: 'Arial', sans-serif; /* กำหนดฟอนต์ */
+    background-image: linear-gradient(to bottom, #e05afa, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); /* พื้นหลังแบบไล่เฉดสี */
+    margin: 0; /* ไม่มี margin */
+    padding: 0; /* ไม่มี padding */
+    display: flex; /* ใช้ flexbox */
+    justify-content: center; /* จัดตำแหน่งแนวนอนให้อยู่กลาง */
+    align-items: center; /* จัดตำแหน่งแนวตั้งให้อยู่กลาง */
+    min-height: 100vh; /* ความสูงของหน้าเต็มหน้าจอ */
+    color: #333; /* สีของตัวอักษร */
+}
+
+/* กำหนดสไตล์สำหรับ .product-container */
+.product-container {
+    display: flex; /* ใช้ flexbox */
+    flex-direction: column; /* จัดเรียงสินค้าในแนวตั้ง */
+    align-items: center; /* จัดตำแหน่งให้อยู่กลาง */
+    gap: 20px; /* เพิ่มช่องว่างระหว่างสินค้า */
+    padding: 20px; /* เพิ่ม padding รอบๆ container */
+}
+
+/* กำหนดสไตล์สำหรับ .product-card */
+.product-card {
+    background-color: #fff; /* พื้นหลังสีขาว */
+    border: 1px solid #ddd; /* ขอบสีเทาอ่อน */
+    border-radius: 8px; /* มุมโค้งมน */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงารอบๆ การ์ด */
+    width: 100%; /* ความกว้างเต็มที่ */
+    max-width: 300px; /* กำหนดความกว้างสูงสุดเป็น 400px */
+    padding: 20px; /* เพิ่ม padding รอบๆ การ์ด */
+    text-align: center; /* จัดข้อความให้อยู่กลาง */
+}
+
+/* กำหนดสไตล์สำหรับ .product-title */
+.product-title {
+    font-size: 1.8rem; /* ขนาดตัวอักษรใหญ่ขึ้น */
+    margin-bottom: 10px; /* เพิ่มช่องว่างด้านล่าง */
+    color: #333; /* สีตัวอักษร */
+}
+
+/* กำหนดสไตล์สำหรับ .product-description */
+.product-description {
+    font-size: 1rem; /* ขนาดตัวอักษรปกติ */
+    margin-bottom: 15px; /* เพิ่มช่องว่างด้านล่าง */
+    color: #666; /* สีตัวอักษรเทาอ่อน */
+}
+
+/* กำหนดสไตล์สำหรับ .product-price */
+.product-price {
+    font-size: 1.2rem; /* ขนาดตัวอักษรใหญ่ขึ้น */
+    color: #ff5722; /* สีตัวอักษรเป็นสีส้ม */
+    margin-bottom: 20px; /* เพิ่มช่องว่างด้านล่าง */
+}
+
+/* กำหนดสไตล์สำหรับ .image-container */
+.image-container {
+    display: flex; /* ใช้ flexbox */
+    justify-content: center; /* จัดตำแหน่งแนวนอนให้กลาง */
+    margin-bottom: 20px; /* เพิ่มช่องว่างด้านล่าง */
+}
+
+/* กำหนดสไตล์สำหรับ .product-image */
+.product-image {
+    max-width: 100%; /* ขนาดของภาพไม่เกิน container */
+    height: auto; /* รักษาสัดส่วนของภาพ */
+    border-radius: 8px; /* มุมโค้งมน */
+    border: 1px solid #ddd; /* ขอบสีเทาอ่อน */
+}
+
+/* กำหนดสไตล์สำหรับปุ่ม Back to All Products */
+.back-link {
+    display: inline-block; /* ทำให้เป็นปุ่มแบบ inline */
+    margin-top: 20px; /* เพิ่มช่องว่างด้านบน */
+    padding: 10px 20px; /* เพิ่ม padding รอบๆ ปุ่ม */
+    font-size: 1rem; /* ขนาดตัวอักษรปกติ */
+    font-weight: bold; /* ทำให้ข้อความหนา */
+    color: #ffffff; /* สีตัวอักษรเป็นสีขาว */
+    text-decoration: none; /* ไม่ให้มีเส้นใต้ */
+    background-image: linear-gradient(to bottom, #9d15d8, #af1cb7, #911c9e); /* พื้นหลังไล่เฉดสี */
+    border-radius: 5px; /* มุมโค้งมน */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+    transition: all 0.3s ease; /* เพิ่มการเปลี่ยนแปลงเมื่อ hover */
+}
+
+/* สไตล์เมื่อ hover ที่ปุ่ม Back to All Products */
+.back-link:hover {
+    background-image: linear-gradient(to bottom, #9d15d8, #af1cb7, #911c9e); /* พื้นหลังเมื่อ hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* เพิ่มเงาเมื่อ hover */
+    transform: scale(1.05); /* ขยายขนาดเมื่อ hover */
+}
+
+/* สไตล์เมื่อ active ที่ปุ่ม Back to All Products */
+.back-link:active {
+    background-image: linear-gradient(to bottom, #9d15d8, #af1cb7, #911c9e); /* พื้นหลังเมื่อคลิก */
+    transform: scale(0.95); /* ย่อขนาดเมื่อคลิก */
+}

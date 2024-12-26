@@ -1,0 +1,144 @@
+/* พื้นหลังหลัก */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right top, #9d15d8, #e92871, #dd4fa3, #c471c8, #a58cdf, #8e9fee, #78b0f6, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); /* เพิ่มสีม่วงเข้ามา */
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+}
+
+/* หัวข้อสินค้า */
+.product-header {  
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 30px 0;
+    color: #000000; /* เปลี่ยนสีตัวอักษรเป็นสีม่วง */
+    font-weight: bold;
+    background: linear-gradient(90deg, #9d15d8, #7b1d94); /* เพิ่มการไล่สีม่วงที่ตัวอักษร */
+    text-shadow: 
+        0 2px 4px rgba(0, 0, 0, 0.2),
+        2px 2px 6px rgba(221, 0, 255, 0.7),
+        0 4px 8px rgba(211, 82, 234, 0.5);
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.product-header:hover {
+    transform: scale(1.05);
+    text-shadow: 
+        0 3px 6px rgba(0, 0, 0, 0.3), 
+        3px 3px 8px rgba(191, 0, 255, 0.9), 
+        0 6px 12px rgba(179, 0, 255, 0.8);
+}
+
+/* รายการสินค้า */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* การ์ดสินค้า */
+.product-item {
+    background-color: #9d15d8; /* เปลี่ยนสีพื้นหลังการ์ดเป็นสีม่วง */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background-color: #a58cdf; /* เปลี่ยนสีพื้นหลังเมื่อ hover เป็นสีม่วงอ่อน */
+}
+
+/* รายละเอียดสินค้า */
+.product-details {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 220px;
+    background-color: #fff;
+}
+
+/* ปรับสีของชื่อสินค้า */
+.product-name {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #9d15d8; /* เปลี่ยนชื่อสินค้าเป็นสีม่วง */
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+/* ปรับสีของรายละเอียดสินค้า */
+.product-description {
+    font-size: 1rem;
+    color: #777;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+/* ปรับสีของราคา */
+.product-price {
+    font-size: 1.3rem;
+    color: #ff5722;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+/* ลิงก์สินค้า */
+.product-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #9d15d8; /* สีพื้นหลังของปุ่มเป็นสีม่วง */
+    color: #ffffff; /* เปลี่ยนสีตัวอักษรเป็นขาว */
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    align-self: center;
+    width: 80%;
+    text-align: center;
+}
+
+.product-link:hover {
+    background-color: #7b1d94; /* สีพื้นหลังปุ่มเมื่อ hover เป็นสีม่วงเข้มขึ้น */
+    transform: scale(1.05);
+}
+
+/* กรอบรูปภาพ */
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    border: 2px solid #9d15d8; /* กรอบรูปเป็นสีม่วง */
+    border-radius: 20px;
+    background-color: #5FFBF1;
+}
+
+/* การกำหนดขนาดและการจัดตำแหน่งรูปภาพภายในกรอบ */
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.image-container img {
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.05);
+}
